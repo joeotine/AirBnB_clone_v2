@@ -4,11 +4,12 @@ starts a Flask web application
 """
 
 from flask import Flask
+
 app = Flask(__name__)
 
 
-@app.route('airbnb_onepage', strict_slashes=False)
-def index():
+@app.route('/airbnb_onepage/', strict_slashes=False)
+def hello_hbnb():
     """returns Hello HBNB!"""
     return 'Hello HBNB!'
 
